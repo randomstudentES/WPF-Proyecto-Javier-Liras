@@ -1,0 +1,15 @@
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\bin\Debug\ProyectoFigma.exe.config
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\bin\Debug\ProyectoFigma.exe
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\bin\Debug\ProyectoFigma.pdb
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.csproj.AssemblyReference.cache
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\MainWindow.g.cs
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\App.g.cs
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma_MarkupCompile.cache
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma_MarkupCompile.lref
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\MainWindow.baml
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.g.resources
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.Properties.Resources.resources
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.csproj.GenerateResource.cache
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.csproj.CoreCompileInputs.cache
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.exe
+C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.pdb
