@@ -18,9 +18,9 @@ namespace ProyectoFigma
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditarPerfil : Window
     {
-        public MainWindow()
+        public EditarPerfil()
         {
             InitializeComponent();
         }

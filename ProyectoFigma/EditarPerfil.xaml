@@ -1,4 +1,4 @@
-﻿<Window x:Class="ProyectoFigma.MainWindow"
+﻿<Window x:Class="ProyectoFigma.EditarPerfil"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,16 +8,20 @@
         Title="MainWindow" Height="900" Width="400"
         Background="#BF8654">
     <Grid>
+
         <Border Margin="40,156,40,94" BorderBrush="#733030" Background="#D9B88F" BorderThickness="4" CornerRadius="20">
-            <!--<Button Background="#D9B88F">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-                <TextBlock FontSize="22" FontFamily="Rockwell">CHATS</TextBlock>
-            </Button>-->
-            
+
+
+
         </Border>
+
+        <TextBlock FontSize="36" HorizontalAlignment="Left" FontFamily="Rockwell" Margin="86,234,0,592" Width="250" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                </TransformGroup>
+            </TextBlock.RenderTransform>Compañía S.L.</TextBlock>
+        <TextBlock FontSize="32" HorizontalAlignment="Center" FontFamily="Rockwell" Margin="0,292,0,552" >Calle 123</TextBlock>
+
+        <Image Source="/imagen.png" Margin="115,77,115,651"/>
     </Grid>
 </Window>

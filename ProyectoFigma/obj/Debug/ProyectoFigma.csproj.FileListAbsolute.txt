@@ -13,3 +13,13 @@ C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFi
 C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.csproj.CoreCompileInputs.cache
 C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.exe
 C:\Users\usuario01\source\repos\ProyectoFigma\ProyectoFigma\obj\Debug\ProyectoFigma.pdb
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\ProyectoFigma.csproj.AssemblyReference.cache
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\ProyectoFigma.exe.config
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\EditarPerfil.g.cs
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\MainWindow.g.cs
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\Menu.g.cs
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\App.g.cs
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\ProyectoFigma_MarkupCompile.cache
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\ProyectoFigma_MarkupCompile.lref
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\ProyectoFigma.exe
+C:\Users\jlirascand\WPF-Proyecto-Javier-Liras\ProyectoFigma\obj\Debug\ProyectoFigma.pdb
