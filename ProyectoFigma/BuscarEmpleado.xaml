@@ -1,0 +1,136 @@
+﻿<Window x:Class="ProyectoFigma.BuscarEmpleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Buscar Empleado"
+        Height="900" Width="400"
+        Background="#BF8654"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <!-- Botón volver -->
+        <Button Width="40" Height="40"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="Volver_Click">
+            <Path Data="M 20,0 L 0,10 L 20,20"
+                  Stroke="#733030"
+                  StrokeThickness="3"
+                  StrokeLineJoin="Round"
+                  StrokeStartLineCap="Round"
+                  StrokeEndLineCap="Round"/>
+        </Button>
+
+        <!-- Contenedor principal -->
+        <Border Margin="40,120,40,120"
+                BorderBrush="#733030"
+                Background="#D9B88F"
+                BorderThickness="4"
+                CornerRadius="20">
+            <StackPanel Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" Width="280">
+
+                <!-- Campo Puesto -->
+                <TextBlock Text="Puesto:"
+                           FontFamily="Rockwell"
+                           FontSize="18"
+                           Foreground="#733030"
+                           Margin="0,10,0,5"/>
+
+                <!-- ✅ Borde para redondear el TextBox -->
+                <Border BorderBrush="#733030"
+                        BorderThickness="2"
+                        CornerRadius="10"
+                        Background="Transparent"
+                        Margin="0,0,0,10">
+                    <TextBox x:Name="txtPuesto"
+                             FontFamily="Rockwell"
+                             FontSize="18"
+                             Foreground="#733030"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Padding="5"/>
+                </Border>
+
+                <!-- Experiencia -->
+                <TextBlock Text="Experiencia (años)"
+                           FontFamily="Rockwell"
+                           FontSize="18"
+                           Foreground="#733030"
+                           Margin="0,25,0,5"/>
+
+                <!-- Slider + Etiquetas -->
+                <StackPanel>
+                    <Slider x:Name="sliderExperiencia"
+                            Minimum="0" Maximum="10"
+                            TickFrequency="1"
+                            IsSnapToTickEnabled="True"
+                            Foreground="#733030"
+                            Background="Transparent"
+                            TickPlacement="BottomRight"
+                            Margin="0,0,0,10"/>
+
+                    <!-- Etiquetas numéricas -->
+                    <UniformGrid Columns="11" HorizontalAlignment="Stretch">
+                        <TextBlock Text="0" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="1" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="2" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="3" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="4" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="5" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="6" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="7" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="8" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="9" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                        <TextBlock Text="10" FontFamily="Rockwell" Foreground="#733030" HorizontalAlignment="Center"/>
+                    </UniformGrid>
+                </StackPanel>
+
+                <!-- ComboBox Estudios -->
+                <TextBlock Text="Estudios Mínimos"
+                           FontFamily="Rockwell"
+                           FontSize="18"
+                           Foreground="#733030"
+                           Margin="0,25,0,5"/>
+
+                <!-- ✅ Borde para redondear el ComboBox -->
+                <Border BorderBrush="#733030"
+                        BorderThickness="2"
+                        CornerRadius="10"
+                        Background="Transparent"
+                        Margin="0,0,0,10">
+                    <ComboBox x:Name="cbEstudios"
+                              FontFamily="Rockwell"
+                              FontSize="16"
+                              Foreground="#733030"
+                              Background="Transparent"
+                              BorderThickness="0"
+                              Padding="5">
+                        <ComboBoxItem Content="Ninguno" IsSelected="True"/>
+                        <ComboBoxItem Content="Primaria"/>
+                        <ComboBoxItem Content="Secundaria"/>
+                        <ComboBoxItem Content="Bachillerato"/>
+                        <ComboBoxItem Content="Universitario"/>
+                    </ComboBox>
+                </Border>
+
+                <!-- Botón Buscar -->
+                <Border BorderBrush="#733030"
+                        BorderThickness="3"
+                        CornerRadius="10"
+                        Margin="0,40,0,0"
+                        Background="Transparent">
+                    <Button Content="BUSCAR"
+                            FontFamily="Rockwell"
+                            FontSize="22"
+                            Foreground="#733030"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Padding="10,5"
+                            Click="Buscar_Click"/>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -9,7 +9,7 @@
         Background="#BF8654">
     <Grid>
         <Border Margin="74,276,74,520" BorderBrush="#733030" Background="Transparent" BorderThickness="4" CornerRadius="20">
-            <Button Background="#D9B88F">
+            <Button Background="#D9B88F" Click="BuscarEmpleado">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -19,7 +19,7 @@
             </Button>
         </Border>
         <Border Margin="74,398,74,398" BorderBrush="#733030" Background="Transparent" BorderThickness="4" CornerRadius="20">
-            <Button Background="#D9B88F">
+            <Button Background="#D9B88F" Click="AbrirEditarPerfil">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -29,7 +29,7 @@
             </Button>
         </Border>
         <Border Margin="74,518,74,278" BorderBrush="#733030" Background="Transparent" BorderThickness="4" CornerRadius="20">
-            <Button Background="#D9B88F">
+            <Button Background="#D9B88F" Click="Chats">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>

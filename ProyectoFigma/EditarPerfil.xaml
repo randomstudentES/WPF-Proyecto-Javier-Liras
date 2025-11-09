@@ -1,27 +1,104 @@
 ﻿<Window x:Class="ProyectoFigma.EditarPerfil"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ProyectoFigma"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="900" Width="400"
-        Background="#BF8654">
+        Title="Editar Perfil" Height="900" Width="400"
+        Background="#BF8654"
+        WindowStartupLocation="CenterScreen">
+
     <Grid>
+        <!-- Botón volver -->
+        <Button Width="40" Height="40"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="Volver_Click">
+            <Path Data="M 20,0 L 0,10 L 20,20"
+                  Stroke="#733030"
+                  StrokeThickness="3"
+                  StrokeLineJoin="Round"
+                  StrokeStartLineCap="Round"
+                  StrokeEndLineCap="Round"/>
+        </Button>
 
-        <Border Margin="40,156,40,94" BorderBrush="#733030" Background="#D9B88F" BorderThickness="4" CornerRadius="20">
+        <!-- Imagen de perfil -->
+        <Ellipse Width="120" Height="120"
+                 Fill="#D9B88F"
+                 Stroke="#733030"
+                 StrokeThickness="4"
+                 VerticalAlignment="Top"
+                 Margin="0,70,0,0"
+                 HorizontalAlignment="Center"/>
+        <Image Source="/imagen.png"
+               Width="120" Height="151"
+               VerticalAlignment="Top"
+               Margin="0,71,0,0"
+               HorizontalAlignment="Center"/>
+
+        <!-- Contenedor principal -->
+        <Border Margin="40,220,40,100"
+                BorderBrush="#733030"
+                Background="#D9B88F"
+                BorderThickness="4"
+                CornerRadius="20">
+            <StackPanel Margin="20" VerticalAlignment="Center">
+                <!-- Nombre -->
+                <TextBlock x:Name="txtNombreEmpresa"
+                   Text="Compañía S.L."
+                   FontFamily="Rockwell"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Foreground="#733030"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,5"/>
+
+                        <TextBlock x:Name="txtDireccion"
+                   Text="Calle 123 21"
+                   FontFamily="Rockwell"
+                   FontSize="20"
+                   Foreground="#733030"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+                        <TextBlock x:Name="txtDescripcion"
+                   TextAlignment="Center"
+                   FontFamily="Rockwell"
+                   FontSize="16"
+                   Foreground="#733030"
+                   TextWrapping="Wrap">
+            Descripción:
+                        </TextBlock>
 
 
+                <!-- Botón editar perfil -->
+                <Button Content="EDITAR PERFIL"
+                    FontFamily="Rockwell"
+                    FontSize="20"
+                    Foreground="#733030"
+                    Padding="10,5"
+                    Background="#D9B88F"
+                    BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="btnBorder"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="10"
+                                BorderBrush="#733030"
+                                BorderThickness="3">
+                                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="btnBorder" Property="Background" Value="#966930"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
 
+            </StackPanel>
         </Border>
-
-        <TextBlock FontSize="36" HorizontalAlignment="Left" FontFamily="Rockwell" Margin="86,234,0,592" Width="250" RenderTransformOrigin="0.5,0.5">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                </TransformGroup>
-            </TextBlock.RenderTransform>Compañía S.L.</TextBlock>
-        <TextBlock FontSize="32" HorizontalAlignment="Center" FontFamily="Rockwell" Margin="0,292,0,552" >Calle 123</TextBlock>
-
-        <Image Source="/imagen.png" Margin="115,77,115,651"/>
     </Grid>
 </Window>

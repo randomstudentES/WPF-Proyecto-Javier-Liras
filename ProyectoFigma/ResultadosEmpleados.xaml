@@ -1,0 +1,135 @@
+﻿<Window x:Class="ProyectoFigma.ResultadosEmpleados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Buscar Empleado"
+        Height="900" Width="400"
+        Background="#BF8654"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <!-- Botón volver -->
+        <Button Width="40" Height="40"
+                Margin="10,10,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                BorderThickness="0"
+                Click="Volver_Click">
+            <Path Data="M 20,0 L 0,10 L 20,20"
+                  Stroke="#733030"
+                  StrokeThickness="3"
+                  StrokeLineJoin="Round"
+                  StrokeStartLineCap="Round"
+                  StrokeEndLineCap="Round"/>
+        </Button>
+
+        <!-- Título -->
+        <TextBlock Text="Elige tu empleado"
+                   FontFamily="Rockwell"
+                   FontSize="28"
+                   FontWeight="Bold"
+                   Foreground="#733030"
+                   HorizontalAlignment="Center"
+                   Margin="0,60,0,0"
+                   VerticalAlignment="Top"/>
+
+        <!-- Tarjeta de empleado -->
+        <Border Margin="40,130,40,180"
+                BorderBrush="#733030"
+                Background="#D9B88F"
+                BorderThickness="4"
+                CornerRadius="20">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel Margin="20">
+
+                    <!-- Cabecera con icono y nombre -->
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                        <Ellipse Width="50" Height="50"
+                                 Fill="#BF8654"
+                                 Stroke="#733030"
+                                 StrokeThickness="2"
+                                 VerticalAlignment="Center"/>
+                        <StackPanel Margin="10,0,0,0">
+                            <TextBlock x:Name="txtNombre"
+                               Text="Nombre"
+                               FontFamily="Rockwell"
+                               FontWeight="Bold"
+                               FontSize="20"
+                               Foreground="#733030"/>
+                            <TextBlock x:Name="txtApellidos"
+                               Text="Apellidos"
+                               FontFamily="Rockwell"
+                               FontSize="18"
+                               Foreground="#733030"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <!-- Estudios -->
+                    <TextBlock Text="Estudios"
+                       FontFamily="Rockwell"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="#733030"
+                       Margin="0,10,0,5"/>
+                                <TextBlock x:Name="txtEstudios"
+                       Text="(Aquí van los estudios)"
+                       FontFamily="Rockwell"
+                       FontSize="14"
+                       Foreground="#733030"
+                       TextWrapping="Wrap"/>
+
+                    <!-- Experiencia -->
+                    <TextBlock Text="Experiencia"
+                       FontFamily="Rockwell"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="#733030"
+                       Margin="0,10,0,5"/>
+                                <TextBlock x:Name="txtExperiencia"
+                       Text="(Aquí va la experiencia)"
+                       FontFamily="Rockwell"
+                       FontSize="14"
+                       Foreground="#733030"
+                       TextWrapping="Wrap"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <!-- Botones inferiores -->
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Bottom"
+                    Margin="0,0,0,40"
+                    >
+            <!-- Botón ❌ -->
+            <Button Width="70" Height="70"
+                    Background="#D9B88F"
+                    BorderBrush="#733030"
+                    BorderThickness="4"
+                    Click="Rechazar_Click"
+                    FontSize="30"
+                    Foreground="Red"
+                    Content="❌"/>
+
+            <!-- Botón ? -->
+            <Button Width="70" Height="70"
+                    Background="#D9B88F"
+                    BorderBrush="#733030"
+                    BorderThickness="4"
+                    Click="Duda_Click"
+                    FontSize="30"
+                    Foreground="#733030"
+                    Content="?"/>
+
+            <!-- Botón ✅ -->
+            <Button Width="70" Height="70"
+                    Background="#D9B88F"
+                    BorderBrush="#733030"
+                    BorderThickness="4"
+                    Click="Aceptar_Click"
+                    FontSize="30"
+                    Foreground="Green"
+                    Content="✅"/>
+        </StackPanel>
+    </Grid>
+</Window>

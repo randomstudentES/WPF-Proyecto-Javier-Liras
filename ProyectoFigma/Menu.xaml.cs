@@ -18,11 +18,33 @@ namespace ProyectoFigma
     /// <summary>
     /// Lógica de interacción para Menu.xaml
     /// </summary>
-    public partial class Menu : Page
+    public partial class Menu : Window
     {
         public Menu()
         {
             InitializeComponent();
         }
+
+        public void BuscarEmpleado(object sender, RoutedEventArgs e)
+        {
+            BuscarEmpleado ventanaBuscarEmpleado = new BuscarEmpleado();
+            ventanaBuscarEmpleado.Show();
+            this.Close();
+        }
+
+        public void AbrirEditarPerfil(object sender, RoutedEventArgs e)
+        {
+            EditarPerfil ventanaEditarPerfil = new EditarPerfil();
+            ventanaEditarPerfil.Show();
+            this.Close();
+        }
+
+        public void Chats(object sender, RoutedEventArgs e)
+        {
+            Chats chatVentana = new Chats();
+            chatVentana.Show();
+            this.Close();
+        }
+
     }
 }
